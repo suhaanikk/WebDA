@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4a373;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container {
+            width: 60%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: none;
+        }
+        .hobbies input {
+            margin-right: 5px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="reset"], button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #6b705c;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+            background-color: #40513b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form method="post" action="success.html">
+            <table border="0">
+                <tr>
+                    <td><label for="first-name">First Name:</label></td>
+                    <td><input type="text" id="first-name" name="first-name" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last-name">Last Name:</label></td>
+                    <td><input type="text" id="last-name" name="last-name" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number:</label></td>
+                    <td><input type="number" id="mobile" name="mobile" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="3" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pincode">Pin Code:</label></td>
+                    <td><input type="number" id="pincode" name="pincode" maxlength="6" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><input type="text" id="country" name="country" value="India" readonly></td>
+                </tr>
+                <tr>
+                    <td><label>Hobbies:</label></td>
+                    <td class="hobbies">
+                        <input type="checkbox" name="hobbies" value="Drawing">Drawing
+                        <input type="checkbox" name="hobbies" value="Singing">Singing
+                        <input type="checkbox" name="hobbies" value="Dancing">Dancing
+                        <input type="checkbox" name="hobbies" value="Sketching">Sketching
+                        <input type="checkbox" name="hobbies" value="Others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Qualification:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="1" width="100%">
+                            <tr>
+                                <th>Sl.No.</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td><input type="text" name="board_x"></td>
+                                <td><input type="number" step="0.01" name="percentage_x"></td>
+                                <td><input type="number" name="year_x"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Class XII</td>
+                                <td><input type="text" name="board_xii"></td>
+                                <td><input type="number" step="0.01" name="percentage_xii"></td>
+                                <td><input type="number" name="year_xii"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation</td>
+                                <td><input type="text" name="board_grad"></td>
+                                <td><input type="number" step="0.01" name="percentage_grad"></td>
+                                <td><input type="number" name="year_grad"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td><input type="text" name="board_masters"></td>
+                                <td><input type="number" step="0.01" name="percentage_masters"></td>
+                                <td><input type="number" name="year_masters"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Courses Applied For:</label></td>
+                    <td>
+                        <input type="checkbox" name="course" value="BCA">BCA
+                        <input type="checkbox" name="course" value="B.Com">B.Com
+                        <input type="checkbox" name="course" value="B.Sc">B.Sc
+                        <input type="checkbox" name="course" value="B.A">B.A
+                        <input type="checkbox" name="course" value="B.Tech">B.Tech
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button type="button" onclick="window.location.href='success.html'"> Submit </button>
+                <input type="reset" value="Reset">
+                <button type="button" onclick="window.location.href='success.html'">Already Registered</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #99b9d5, #002331);
+            color: #333;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 900px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            flex: 0 0 150px;
+            margin-right: 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .profile-image img {
+            width: 180px;
+            height: 195px;
+            object-fit: cover;
+            transform: translate(-15px, -15px);
+        }
+        .content {
+            flex: 1;
+        }
+        h2 {
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #132243;
+            color: white;
+        }
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="headerimage.webp" alt="Header Image">
+        <h1><font color="pink" size="10" face="Helvetica">My Profile</font></h1>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Profile Photo">
+            </div>
+            <div class="content">
+                <h2>Contact Information</h2>
+                <p>
+                    Name: <b>Suhaani Kedar</b><br>
+                    Address: LH E Block, VIT Vellore, Katpadi, Tamil Nadu, India<br>
+                    Telephone: 9449015257<br>
+                    Email: <a href="mailto:suhaanikedar@gmail.com">suhaanikedar@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Educational Details</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Max Marks</th>
+                <th>Scored Marks</th>
+                <th>Percentage/CGPA</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>2010-2022</td>
+                <td>Kendriya Vidyalaya DRDO</td>
+                <td>500</td>
+                <td>488</td>
+                <td>95%</td>
+                <td>First</td>
+            </tr>
+            <tr>
+                <td>I Sem</td>
+                <td>Vellore Institute Of Technology</td>
+                <td>10</td>
+                <td>8.88</td>
+                <td>8.88</td>
+                <td>First</td>
+            </tr>
+            <tr>
+                <td>II Sem</td>
+                <td>Vellore Institute Of Technology</td>
+                <td>10</td>
+                <td>9.49</td>
+                <td>9.49</td>
+                <td>First</td>
+            </tr>
+        </table>
+
+        <h2>Co-Curricular Activities</h2>
+        <ul>
+            <li>President of Debate Club</li>
+            <li>National level roller skater</li>
+            <li>Kathak dancer</li>
+            <li>Member of Robotics Club</li>
+            <li>Volunteer at Community Tech Workshops</li>
+        </ul>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java</li>
+            <li>Machine Learning Basics</li>
+            <li>Motion graphics</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Traveling</li>
+            <li>Reading Novels</li>
+            <li>Playing Guitar</li>
+        </ul>
+
+        <h2>Personal Details</h2>
+        <p>
+            Date of Birth: 11th October 2004<br>
+            Nationality: Indian<br>
+            Languages: English, Hindi, Sanskrit
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Suhaani Kedar | <a href="https://www.linkedin.com/in/skedar2004/" target="_blank">LinkedIn</a> | <a href="https://github.com/SuhaaniK" target="_blank">GitHub</a> | <a href="#">Portfolio</a></p>
+    </footer>
+</body>
+</html>

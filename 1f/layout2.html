@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Assignment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .parent {
+            width: 80%;
+            height: 80vh;
+            background-color: aqua;
+            box-sizing: border-box;
+            margin: auto;
+            margin-top: 10vh;
+        }
+
+        .child1 {
+            width: 100%;
+            height: 70%;
+            background-color: brown;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .child2 {
+            width: 100%;
+            height: 30%;
+            background-color: purple;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .text {
+            padding: 10px;
+            font-weight: bold;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="text">This is the parent division!</div>
+        <div class="child1">
+            This is child 1!
+        </div>
+        <div class="child2">
+            This is child 2!
+        </div>
+    </div>
+</body>
+</html>
